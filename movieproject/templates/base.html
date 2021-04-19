@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+      Online MOVIE Store
+  </a>
+    <span class="navbar-text" enctype="multipart/form-data">
+        <a class="btn btn-success" href="{% url 'movieapp:add_movies' %}">Add Movies</a>
+    </span>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>
